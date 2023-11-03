@@ -7,3 +7,4 @@ listItem.forEach(categorie=>{
     console.log(`Elements: ${categorieList.length}` );
     }
 )
+    
