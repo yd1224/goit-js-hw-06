@@ -60,5 +60,9 @@ createMarkUp(images);
 //     return li;
 //   })
 //   list.append(...markUp)
+// markup.forEach(item => {
+//   list.insertAdjacentElement("beforeend", item)
+// }
+// )
 // }
 // createMarkUp(images);
