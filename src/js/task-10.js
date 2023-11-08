@@ -15,8 +15,9 @@ btnCreate.addEventListener("click", createBoxes)
 btnDestroy.addEventListener("click", destroyBoxes)
  
 function createBoxes() {
+  box.innerHTML="";
     const amount = Number(input.value);
-  for (let i = 0, j = 30; i < amount; i += 1, j+=10){
+  for (let i = 0, j = 30; i < amount; i += 1, j += 10){
      const div = document.createElement("div");
       div.style.backgroundColor = getRandomHexColor();
       div.style.width = j+"px";
