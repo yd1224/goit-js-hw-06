@@ -18,7 +18,7 @@ const list = document.querySelector(".gallery")
 function createMarkUp(arr) {
   const markUp = arr.map(({ url, alt }) => `
   <li>
-<img src = "${url}" alt = "${alt}" width = "300px"/>
+<img src ="${url}" alt ="${alt}" width ="300px"/>
    
   </li>
   `).join("")
