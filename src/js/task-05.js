@@ -1,10 +1,10 @@
-const input = document.querySelector("#name-input");
-const message = document.querySelector("#name-output")
-input.addEventListener("input", handleInput);
-function handleInput() {
-    message.textContent = event.currentTarget.value;
- if (input.value === "") {
-        message.textContent= "Anonymous"
-    } 
+const nameInput = document.querySelector("#name-input");
+const nameOutput = document.querySelector("#name-output");
+
+// Add event listener to the name input field
+nameInput.addEventListener("input", handleInput);
+
+function handleInput(event) {
+    const trimmedValue = event.currentTarget.value.trim();
+    nameOutput.textContent = trimmedValue !== "" ? trimmedValue : "Anonymous";
 }
-  
